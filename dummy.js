@@ -1,11 +1,6 @@
 module.exports = {
   data: function () {
-      return {
-      "lastBuildDate": "Wed, 15 Mar 2017 16:42:25 +0900",
-      "total": 2314,
-      "start": 1,
-      "display": 20,
-      "items": [
+      return [
         {
           "title": "<b>KT</b>그룹 종합 인 적성검사 (종합편,2016 하반기 채용대비)",
           "link": "http://book.naver.com/bookdb/book_detail.php?bid=10835720",
@@ -247,6 +242,5 @@ module.exports = {
           "description": "‘<b>KT</b>그룹 채용 종합인적성검사/면접[이공계(네트워크)]’에 대비하기 위한 수험서로서, <b>KT</b>그룹에서 직원 채용 시에 시행하고 있는 ‘<b>KT</b>그룹 채용 종합인적성검사/면접[이공계(네트워크)]’의 기출 유형을 철저히 분석하고 반영하여 나올 문제 유형을 모두 미리 다루어 볼 수 있게 하였다. \n\n또 이 책은 최근... "
         }
       ]
-    }
   }
 };
