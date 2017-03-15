@@ -1,0 +1,33 @@
+{
+  "name": "coding_test",
+  "version": "1.0.0",
+  "description": "javascript coding_test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "grunt_build": "grunt build",
+    "gulp_build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r2fresh/coding_test.git"
+  },
+  "author": "r2fresh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r2fresh/coding_test/issues"
+  },
+  "homepage": "https://github.com/r2fresh/coding_test#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.2",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular2": "^2.0.0-beta.21",
+    "react": "^15.4.2",
+    "vue": "^2.2.4"
+  }
+}

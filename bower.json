@@ -1,0 +1,31 @@
+{
+  "name": "coding_test",
+  "description": "javascript coding_test",
+  "main": "index.js",
+  "authors": [
+    "r2fresh"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/r2fresh/coding_test",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "underscore": "^1.8.3",
+    "backbone": "^1.3.3",
+    "text": "^2.0.15",
+    "requirejs": "^2.3.3",
+    "vue": "^2.2.4",
+    "react": "^15.4.2",
+    "angular": "angular2#^1.6.3",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
