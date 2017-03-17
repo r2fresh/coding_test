@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/app.controller.js"></script>
+</head>
+<body>
+	<div data-ng-app="app">
+		<div data-ng-controller="appCtrl">
+		<div>{{data}}<div>
+			<ul class="books">
+				<li>
+					<div class="row book">
+						<div class="col-md-3 text-conter"></div>
+						<div class="col-md-9 info">
+						<div data-ng-repeat="obj in data tack">
+						<li>
+						<b>{{obj.author}}</b>
+						</li>
+						<div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

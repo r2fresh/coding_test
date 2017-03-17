@@ -13,6 +13,7 @@ app.get('/',function(req, res){
 })
 
 app.use(express.static('src'));
+app.use('/app', express.static(__dirname + '/app'));
 
 app.get('/books', function(req, res) {
     res.send(dummy.data())
