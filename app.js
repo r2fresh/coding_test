@@ -7,6 +7,7 @@
 var express = require('express');
 var app = express();
 var dummy = require('./dummy.js')
+var fs = require('fs');
 
 app.get('/',function(req, res){
     res.sendFile(__dirname + '/src/index.html')
@@ -21,3 +22,6 @@ app.get('/books', function(req, res) {
 app.listen((process.env.PORT || 8080), function () {
     console.log('Example app listening on port 8080!');
 });
+
+ var content = fs.readFileSync("/src/index.html");
+ 
