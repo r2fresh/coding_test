@@ -1,0 +1,19 @@
+.books {
+    list-style:none;
+}
+
+.books > li {
+    padding:5px 0px;
+}
+
+.books .book {
+    padding:10px;border: solid 1px #999999;
+}
+
+.books .book .info {
+    border-left: solid 1px #999999;
+}
+
+.books .book .info ul {
+    list-style:none;padding:0px;
+}
