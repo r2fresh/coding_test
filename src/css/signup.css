@@ -1,0 +1,59 @@
+.coding_test {
+    margin-top:20px;
+}
+
+.badge {
+    background-color: #d9534f;
+}
+
+.signup .panel {
+    border-radius:0px;
+}
+
+.signup .panel-heading {
+    border-radius:0px;
+}
+
+.signup .panel-heading h3,
+.signup-viewer .panel-heading h3 {
+    margin:0px;
+}
+
+.signup .panel .kt_phone_first {
+    padding-right:5px;
+}
+
+.signup .panel .kt_phone_second {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.signup .panel .kt_phone_third {
+    padding-left:5px;
+}
+
+.signup .panel .kt_birth_year{
+    padding-right:5px;
+}
+
+.signup .panel .kt_birth_mon{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.signup .panel .kt_birth_day{
+    padding-left:5px;
+}
+
+.coding_test .arrow {
+    padding-top:200px;
+}
+
+.signup-viewer .input-value input{
+    border:0px;
+    box-shadow:none;
+}
+
+.kt_validation ul {
+    margin:0px;
+}
