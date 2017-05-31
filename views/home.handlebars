@@ -1,0 +1,34 @@
+
+    <div class="container">
+
+{{#each books}}
+<ul class="books">
+    <li>
+        <div class="row book">
+            <div class="col-md-3 text-center">
+                <!-- link -->
+                <a href="http://book.naver.com/bookdb/book_detail.php?bid=10835720">
+                    <!-- image -->
+                    <img src="http://bookthumb.phinf.naver.net/cover/108/357/10835720.jpg?type=m1&udate=20160721">
+                </a>
+            </div>
+            <div class="col-md-9 info">
+                <ul>
+                    <!-- title -->
+                    <li>{{{title}}}</li>
+                    <!-- author | publisher | pubdate -->
+                    <li>{{{author}}} | {{{publisher}}} | {{datetemp pubdate}}</li>
+                    <!-- price → discount -->
+                    <li>(원가) {{moneytemp price}}원 → {{moneytemp discount}}원</li>
+                    <!-- description -->
+                    <li>
+                        {{{description}}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </li>
+  </ul>
+{{/each}}
+
+</div>
