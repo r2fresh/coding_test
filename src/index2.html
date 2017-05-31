@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>coding test</title>
+
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" charset="utf-8">
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" charset="utf-8">
+
+        <link rel="stylesheet" href="/css/basic.css" media="screen" title="no title" charset="utf-8">
+
+        <script src="lib/jquery/dist/jquery.js" charset="utf-8"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+
+        <script src="lib/underscore/underscore.js" charset="utf-8"></script>
+        <script src="lib/backbone/backbone.js" charset="utf-8"></script>
+
+        <script src="lib/handlebars/handlebars.js" charset="utf-8"></script>
+        <script>
+        (function(){
+            $.ajax({
+                url: './books',
+                method : 'GET',
+                dataType : 'json',
+                success : function(data){
+                  console.log(data);
+
+                    for(let i=0;i<data.length;i++){
+                      let str = "<ul><li>"+data[i].title + "</li>";
+                      str += "<li>"+data[i].author + " | " + data[i].publisher + " | " + data[i].pubdate + "</li>";
+                      str += "<li>(원가)"+data[i].price + " 원-> " + data[i].discount +"원</li>";
+                      str += "<li>"+data[i].description + "</li></ul>";
+
+                        $('.container').append("<div class='box'><div class='dv_left'><img src='"+data[i].image+"' /></div><div class='dv_right'>"+str+"</div></div>");
+                    }
+
+                    $('.beautify pre').text(JSON.stringify(data, null, 4))
+                }
+            });
+        })()
+        </script>
+        <style>
+        li{ list-style: none}
+        .box{ border:1px solid #000;  display: inline-block; width:100%; margin: 5px 0; padding: 10px;}
+        .dv_left{ float: left; width: 200px; text-align: center;}
+        .dv_right{  margin-left: 200px;border-left:1px solid #000;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+        </div>
+    </body>
+    <script src="./js/App.js" charset="utf-8"></script>
+</html>
